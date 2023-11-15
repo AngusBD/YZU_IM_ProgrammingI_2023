@@ -35,9 +35,17 @@ void square(int *arr){
 }
 
 void Q3(){
-    
+    string str;
+    for(char i = 'a'; i < 'z' + 1; i++){
+        str += i;
+    }
+    // cout << str;
+    char *ptr = str;
+    cout << ptr;
 }
 
 int main(){
-    Q2();
+    // Q1();
+    // Q2();
+    Q3();
 }
