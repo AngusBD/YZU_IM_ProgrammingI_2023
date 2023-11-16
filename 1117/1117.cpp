@@ -36,12 +36,18 @@ void square(int *arr){
 
 void Q3(){
     string str;
-    for(char i = 'a'; i < 'z' + 1; i++){
-        str += i;
+    for(int i = 32; i < 126; i++){
+        char temp = i;
+        str += temp;
     }
-    // cout << str;
-    char *ptr = str;
-    cout << ptr;
+    char *ptr = &str[0];
+    cout << ptr << endl;
+    for(int i = 0; i < str.length(); i++){
+        if(*(ptr+i) >= 'a' && *(ptr + i) <= 'z'){
+            *(ptr + i) = *(ptr + i) + ('A' - 'a');
+        }
+    }
+    cout << ptr << endl;
 }
 
 int main(){
