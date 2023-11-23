@@ -3,7 +3,7 @@
 #include<cmath>
 
 using namespace std;
-
+// void **(*d) (int &, char **(*)(char *, char **));
 void display(const char*, int);
 void square(int *);
 
